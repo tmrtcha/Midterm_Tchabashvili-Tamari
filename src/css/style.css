@@ -824,3 +824,14 @@ body {
   margin-left: 4px;
   text-align: right;
 }
+
+/* --- Bottom Details --- */
+.property-details {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 20px;
+  border-top: 1px solid #eee;
+  color: #222;
+  font-size: 14px;
+  font-weight: 500;
+}
