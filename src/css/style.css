@@ -835,3 +835,43 @@ body {
   font-size: 14px;
   font-weight: 500;
 }
+/* --- FOOTER --- */
+.footer {
+  background: #29b24e;
+  color: #fff;
+  padding: 20px 0;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto 10px;
+  padding: 0 20px;
+}
+
+.footer-nav a,
+.footer-social a,
+footer p {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 8px;
+  font-size: 13px;
+}
+
+.footer hr {
+  border: none;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.5);
+  margin: 10px auto;
+  width: 90%;
+}
+
+.footer-copy {
+  font-size: 12px;
+  opacity: 0.9;
+}
