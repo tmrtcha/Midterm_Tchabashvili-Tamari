@@ -1,0 +1,85 @@
+/* --- RESET & BASE --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header .search-btn,
+.header .container .search-box,
+.details-header .search-btn,
+.details-header .container .search-box,
+.bottom-nav,
+.details-bottom-nav {
+  display: none;
+}
+
+/* --- HEADER --- */
+.header,
+.details-header {
+  background-color: white;
+  box-shadow: none;
+  padding: 15px 40px;
+}
+
+.header .container,
+.details-header .container,
+.details-header2 .container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.details-header,
+.details-header2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.8rem;
+}
+
+.logo img {
+  width: 45px;
+}
+
+.nav ul,
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.nav a,
+.nav-links a {
+  text-decoration: none;
+  color: #111;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav a:hover,
+.nav a.active,
+.nav-links a:hover {
+  color: #29b24e;
+}
+
+.btn,
+.btn-sell {
+  background-color: #29b24e;
+  border: none;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+}
