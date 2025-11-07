@@ -516,3 +516,177 @@ body {
   border-top: 1px solid #eee;
   padding: 10px 16px;
 }
+
+/* --- MAIN LAYOUT --- */
+.main,
+.main-grid {
+  display: grid;
+  grid-template-columns: 270px 1fr;
+  gap: 25px;
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* --- SIDEBAR --- */
+.sidebar {
+  width: 260px;
+  background: #f8f8f8;
+  padding: 20px;
+  border-radius: 18px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+}
+
+.sidebar h3,
+.sidebar h4 {
+  margin: 20px 0 10px;
+  font-size: 15px;
+}
+
+.sidebar select,
+.dropdown select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  outline: none;
+  margin-bottom: 15px;
+}
+
+.sidebar ul,
+.checkbox-list {
+  list-style: none;
+  font-size: 13px;
+  padding: 0;
+}
+
+.sidebar label,
+.checkbox-list li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #333;
+  font-size: 13px;
+  margin: 6px 0;
+}
+
+.sidebar input,
+.checkbox-list input {
+  accent-color: #29b24e;
+  cursor: pointer;
+}
+
+.hero {
+  position: relative;
+  border-radius: 18px;
+  overflow: hidden;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #111;
+}
+
+.hero-text {
+  width: 80%;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #222;
+}
+
+.hero img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  filter: brightness(0.9);
+}
+
+.hero h1,
+.hero p,
+.hero .search-box {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  color: #555;
+  font-size: 15px;
+  margin-bottom: 25px;
+}
+
+.hero .search-box {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 40%;
+  padding: 8px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hero .search-box:hover {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.hero .search-box input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #444;
+  background: transparent;
+}
+
+.hero .search-box input::placeholder {
+  color: #999;
+  font-weight: 400;
+}
+
+.hero .search-box button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  transition: transform 0.2s ease;
+}
+
+.hero .search-box button:hover {
+  transform: scale(1.1);
+}
+
+.hero .search-box svg {
+  width: 20px;
+  height: 20px;
+  opacity: 0.5;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 18px;
+  filter: brightness(0.9);
+}
